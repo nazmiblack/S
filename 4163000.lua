@@ -1,0 +1,8 @@
+
+
+-- Main AppID
+addappid(4163000)
+
+-- Main Depots
+addappid(4163001, 1, "d9dd508f82e8afe79ef86af9153cee361abe1224860b5966e54f1660e7850423")
+-- setManifestid(4163001, "203541642845131089", 765048409)

@@ -1,0 +1,25 @@
+
+-- Main AppID
+addappid(4921760, 1, "7a84d400e6593cfb8b53541e3962197e520a5cf1ba7592839cf30ecfb5da20ac")
+
+-- Main Depots
+addappid(4921761, 1, "0c048a7304ef13946df89eb61a5175e59dbb6eaddd717c1a0a78f25e5d4f7d9f")
+-- setManifestid(4921761, "8731017377440776717", 92393749)
+addappid(4921762, 1, "b92510d7b0ff4db002ec6f0986cd40c74cf838cef8914d2c49dfd4b783455dc1") -- English
+-- setManifestid(4921762, "5672102396802605461", 937126029)
+addappid(4921763, 1, "b0b163b5282fe9bbd1070e319e6548fff4e12e8b539968c5025e1f46e1aafd53") -- French
+-- setManifestid(4921763, "7213484347741211319", 932978182)
+addappid(4921764, 1, "782e5d3357463c5967fe034b1b647d0e2c01e74392af49a65f68e61b854f6806") -- Polish
+-- setManifestid(4921764, "3974043231895641918", 806616954)
+addappid(4921765, 1, "171624b8b5487e776b1261cb2bc2e1c08388d490212aa2fad17ad9c16a70a9f4") -- Russian
+-- setManifestid(4921765, "1485784534700944134", 908614491)
+
+-- DLC's (no depot keys required)
+addappid(4969080) -- Heroes Of Might And Magic III Ubisoft Activation
+
+-- Shared Depots (Runtimes / Launchers / ETC)
+addappid(228981, 1, "9afdbd47677424be993f6b516a15ebdb5281aa318114631d14b2b23999ae97ac") -- (windows)
+addappid(228983, 1, "77c8e812cd79e67e2d376721253ebb07e06b3646f05671c6c9517b27be14734b") -- (windows)
+addappid(228988, 1, "1845444d5e2cfd0ae65ae4a8fedb6e2fbf776fcc5b913ab4ac461bc9a74f8358") -- (windows)
+addappid(228989, 1, "ad69276eb476cf06c40312df7376d63deac0c838b9a2767005be8bb306ffb853") -- (windows)
+addappid(228990, 1, "44d8c45ce229a11c4f231a3d2a350eaf80b0d69a8af938ec7ccca720f694b0e8") -- (windows)
