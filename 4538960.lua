@@ -1,8 +1,0 @@
-
-
--- Main AppID
-addappid(4538960)
-
--- Main Depots
-addappid(4538961, 1, "5034f6a8570c1c532c135e9edff470a05ebc20899b9c214b2e00c1be000c6396")
--- setManifestid(4538961, "3544386103163623943", 300533916)

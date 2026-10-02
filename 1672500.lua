@@ -1,34 +1,5 @@
-
--- Main AppID
 addappid(1672500)
-
--- Main Depots
-addappid(1672501, 1, "9f2f74d11338105456bfb27b568e86d4db1b13ce938fcc6272f334a7d042be53")
--- setManifestid(1672501, "4065812194408039653", 11788890837)
-
--- DLC's (no depot keys required)
-addappid(2884320) -- GUNDAM BREAKER 4 - Pre-Order Bonus
-addappid(2884330) -- GUNDAM BREAKER 4 - Story Mission DLC 1 - GO! RESTART!!
-addappid(2884340) -- GUNDAM BREAKER 4 - Story Mission DLC 2 - BRAVE DIVE
-addappid(2884350) -- GUNDAM BREAKER 4 - Story Mission DLC 3 - BATTLE TOURNAMENT
-addappid(2884360) -- GUNDAM BREAKER 4 - Story Mission DLC 4 - BATTLE FIERCELY
-addappid(2884370) -- GUNDAM BREAKER 4 - Story Mission DLC 5 - BEYOND BORDERS
-addappid(2884380) -- GUNDAM BREAKER 4 - Season Pass Bonus
-addappid(2884390) -- GUNDAM BREAKER 4 - Diorama Pack 1 - Colony Set
-addappid(2884400) -- GUNDAM BREAKER 4 - Diorama Pack 2 - Mobile Weapon & Colony Laser Inner Wall
-addappid(2884410) -- GUNDAM BREAKER 4 - Diorama Pack 3 - Class Room Set & Haro
-addappid(2884420) -- GUNDAM BREAKER 4 - Diorama Pack 4 - Beach Set & Effect
-addappid(2884430) -- GUNDAM BREAKER 4 - Diorama Set Bonus
-addappid(2884440) -- GUNDAM BREAKER 4 - Deluxe Edition Bonus
-addappid(2884450) -- GUNDAM BREAKER 4 - Season Pass
-addappid(2884460) -- GUNDAM BREAKER 4 - Diorama Pack Set
-addappid(3085970) -- GUNDAM BREAKER 4 - Breaker Booster x 100
-addappid(3085980) -- GUNDAM BREAKER 4 - Breaker Booster x 500
-addappid(3498520) -- GUNDAM BREAKER 4 - Builders' Vault Bundle
-addappid(3498530) -- GUNDAM BREAKER 4 - Power-up Booster Bundle
-addappid(3498540) -- GUNDAM BREAKER 4 - Builder and Power-Up Set
-
--- Shared Depots (Runtimes / Launchers / ETC)
-addappid(228988, 1, "1845444d5e2cfd0ae65ae4a8fedb6e2fbf776fcc5b913ab4ac461bc9a74f8358") -- (windows)
-addappid(228990, 1, "44d8c45ce229a11c4f231a3d2a350eaf80b0d69a8af938ec7ccca720f694b0e8") -- (windows)
-
+addappid(228990)
+setManifestid(228990,"1829726630299308803")
+addappid(1672501,0,"9f2f74d11338105456bfb27b568e86d4db1b13ce938fcc6272f334a7d042be53")
+setManifestid(1672501,"4065812194408039653")
