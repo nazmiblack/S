@@ -1,7 +1,4 @@
--- Downloaded using DepotBox - https://depotbox.org/
--- Original file: 4358690.lua
---Gamename Graveyard Keeper 2
-addappid(4358690, 1, "19f7f0e4cbd124bde697d0ca331555f752340f34b1faf18f83c2760eee227ec8") --Mainappid Graveyard Keeper 2
-addappid(4358691, 1, "f2b22a0d0551c35416c9753759ea66c88a07716562dcc599f38d1d9283a4e2fd") --Main Windows Depot Graveyard Keeper 2
-setManifestid(4358691, "4979623611946513589", 983188864)
-addappid(5021030) --Dlcname Graveyard Keeper 2 - Pre-order bonus
+addappid(4358690)
+addappid(4358690,0,"19f7f0e4cbd124bde697d0ca331555f752340f34b1faf18f83c2760eee227ec8")
+addappid(4358691,0,"f2b22a0d0551c35416c9753759ea66c88a07716562dcc599f38d1d9283a4e2fd")
+setManifestid(4358691,"4599483364566526977")

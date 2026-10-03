@@ -1,6 +1,3 @@
-
--- Original file: 2591310.lua
---Gamename Pure Badminton
-addappid(2591310) --Mainappid Pure Badminton
-addappid(2591312, 1, "ed8066779946e28b115187ad2fe7e2bb8a359c4811efe4c1d8621171f8962a99") --Main Windows Depot Pure Badminton
-setManifestid(2591312, "3014518886127820744", 1437285360)
+addappid(2591310)
+addappid(2591312,0,"ed8066779946e28b115187ad2fe7e2bb8a359c4811efe4c1d8621171f8962a99")
+-- setManifestid(2591312, "2221228527266599138")
