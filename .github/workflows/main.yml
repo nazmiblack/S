@@ -1,0 +1,32 @@
+name: Send Discord Notification on Game Add
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v35
+
+      - name: Send Discord Webhook
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ "$file" == *.lua ]]; then
+              appid=$(basename "$file" .lua)
+              
+              curl -H "Content-Type: application/json" \
+                   -d "{\"embeds\": [{\"title\": \"New Game Added!\", \"color\": 65280, \"fields\": [{\"name\": \"App ID:\", \"value\": \"\`$appid\`\", \"inline\": false}], \"footer\": {\"text\": \"Automated GitHub Update\"}}]}" \
+                   $DISCORD_WEBHOOK
+            fi
+          done
