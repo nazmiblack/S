@@ -15,21 +15,89 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Send Discord Webhook
+      - name: Send Rich Embed to Discord
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          # Cari fail .lua yang baru di-commit dalam push terkini
-          changed_files=$(git diff --name-only HEAD^ HEAD)
+          python3 - << 'EOF'
+          import os
+          import json
+          import urllib.request
+          import subprocess
+
+          webhook_url = os.environ.get("DISCORD_WEBHOOK")
           
-          for file in $changed_files; do
-            if [[ "$file" == *.lua ]]; then
-              filename=$(basename "$file")
-              appid="${filename%.*}"
-              echo "Jumpa fail Lua: $appid"
-              
-              curl -H "Content-Type: application/json" \
-                   -d "{\"embeds\": [{\"title\": \"New Game Added!\", \"color\": 65280, \"fields\": [{\"name\": \"App ID:\", \"value\": \"\`$appid\`\", \"inline\": false}], \"footer\": {\"text\": \"Automated GitHub Update\"}}]}" \
-                   $DISCORD_WEBHOOK
-            fi
-          done
+          # Dapatkan senarai fail yang berubah menggunakan git diff
+          try:
+              changed_files = subprocess.check_output(["git", "diff", "--name-only", "HEAD^", "HEAD"]).decode("utf-8").splitlines()
+          except Exception as e:
+              print(f"Error getting changed files: {e}")
+              changed_files = []
+
+          for file_path in changed_files:
+              if file_path.endswith(".lua"):
+                  filename = os.path.basename(file_path)
+                  appid = os.path.splitext(filename)[0]
+                  if not appid.isdigit():
+                      continue
+
+                  # Tetapan asal jika data Steam gagal ditarik
+                  name = f"App ID {appid}"
+                  released = "N/A"
+                  genres = "N/A"
+                  header_image = ""
+                  store_url = f"https://store.steampowered.com/app/{appid}"
+
+                  # Tarik info dari Steam API
+                  try:
+                      url = f"https://store.steampowered.com/api/appdetails?appids={appid}"
+                      req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                      with urllib.request.urlopen(req, timeout=10) as res:
+                          data = json.loads(res.read().decode('utf-8'))
+                          if data and str(appid) in data and data[str(appid)].get("success"):
+                              info = data[str(appid)]["data"]
+                              name = info.get("name", name)
+                              released = info.get("release_date", {}).get("date", "N/A")
+                              
+                              genre_list = [g.get("description") for g in info.get("genres", [])]
+                              if genre_list:
+                                  genres = ", ".join(genre_list)
+                              
+                              header_image = info.get("header_image", "")
+                  except Exception as e:
+                      print(f"Error fetching Steam API: {e}")
+
+                  # Format Kad Discord dengan pautan pada Title
+                  payload = {
+                      "embeds": [
+                          {
+                              "title": name,
+                              "url": store_url,
+                              "color": 65280, # Garisan hijau di tepi kad
+                              "fields": [
+                                  {"name": "App ID:", "value": f"`{appid}`", "inline": True},
+                                  {"name": "Released:", "value": released, "inline": True},
+                                  {"name": "Genres:", "value": genres, "inline": False}
+                              ],
+                              "image": {
+                                  "url": header_image
+                              },
+                              "footer": {
+                                  "text": "Automated GitHub Update"
+                              }
+                          }
+                      ]
+                  }
+
+                  # Hantar ke Webhook Discord
+                  req_discord = urllib.request.Request(
+                      webhook_url,
+                      data=json.dumps(payload).encode('utf-8'),
+                      headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'}
+                  )
+                  try:
+                      urllib.request.urlopen(req_discord)
+                      print(f"Successfully sent rich notification for {name}")
+                  except Exception as e:
+                      print(f"Failed to send Discord webhook: {e}")
+          EOF
