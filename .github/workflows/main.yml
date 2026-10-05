@@ -1,6 +1,9 @@
 name: Send Discord Notification on Game Add
 
-on: [push]
+on:
+  push:
+    paths:
+      - '*.lua'
 
 jobs:
   notify:
@@ -17,14 +20,12 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          echo "Checking for new .lua files..."
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          for file in ${{ steps.changed-files.outputs.added_files }}; do
             if [[ "$file" == *.lua ]]; then
               appid=$(basename "$file" .lua)
-              echo "Found new Lua file for AppID: $appid"
               
               curl -H "Content-Type: application/json" \
-                   -d "{\"embeds\": [{\"title\": \"New Game Added!\", \"color\": 65280, \"fields\": [{\"name\": \"App ID:\", \"value\": \"\`$appid\`\", \"inline\": false}, {\"name\": \"SteamDB Link:\", \"value\": \"[View on SteamDB](https://steamdb.info/app/$appid/)\", \"inline\": false}], \"footer\": {\"text\": \"Automated GitHub Update\"}}]}" \
+                   -d "{\"embeds\": [{\"title\": \"New Game Added!\", \"color\": 65280, \"fields\": [{\"name\": \"App ID:\", \"value\": \"\`$appid\`\", \"inline\": false}], \"footer\": {\"text\": \"Automated GitHub Update\"}}]}" \
                    $DISCORD_WEBHOOK
             fi
           done
