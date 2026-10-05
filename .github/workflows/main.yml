@@ -11,23 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Get changed files using git
-        id: git-files
-        run: |
-          # Ambil senarai fail yang baru ditambah/diubah dalam commit terkini
-          changed_files=$(git diff-tree --no-commit-id --name-only -r${{ github.sha }})
-          echo "files<<EOF" >> $GITHUB_OUTPUT
-          echo "$changed_files" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Send Discord Webhook
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          echo "Meneroka senarai fail..."
-          for file in ${{ steps.git-files.outputs.files }}; do
+          # Cari fail .lua yang baru di-commit dalam push terkini
+          changed_files=$(git diff --name-only HEAD^ HEAD)
+          
+          for file in $changed_files; do
             if [[ "$file" == *.lua ]]; then
               filename=$(basename "$file")
               appid="${filename%.*}"
