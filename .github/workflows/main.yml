@@ -83,7 +83,7 @@ jobs:
                                   "url": header_image
                               },
                               "footer": {
-                                  "text": "Automated GitHub Update"
+                                  "text": "Update By BlackGaming"
                               }
                           }
                       ]
