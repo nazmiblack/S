@@ -1,3 +1,6 @@
-addappid(1416050)
-addappid(1416052,0,"e08c8ef3509406337f1cca1b38b73c68fcadc8f88db5600f4c9e521c3e13fd80")
-setManifestid(1416052,"1620590406626464340")
+-- Create By BlackGaming
+-- Original file: 1416050.lua
+--Gamename Shovel Knight Dig
+addappid(1416050) --Mainappid Shovel Knight Dig
+addappid(1416052, 1, "e08c8ef3509406337f1cca1b38b73c68fcadc8f88db5600f4c9e521c3e13fd80") --Main Windows Depot Shovel Knight Dig
+setManifestid(1416052, "7191899519630997036", 280748512)

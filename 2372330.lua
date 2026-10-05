@@ -1,3 +1,6 @@
-addappid(2372330)
-addappid(2372331,0,"07f41754bba0b990ab7cb40d3b98264155d8095234b71eed3a3e2fca7dbf3462")
-setManifestid(2372331,"9054800815806290768")
+-- Create By BlackGaming
+-- Original file: 2372330.lua
+--Gamename 血之诗: 月之蚀
+addappid(2372330) --Mainappid 血之诗: 月之蚀
+addappid(2372331, 1, "07f41754bba0b990ab7cb40d3b98264155d8095234b71eed3a3e2fca7dbf3462") --Main Windows Depot 血之诗: 月之蚀
+setManifestid(2372331, "8689560367292211528", 534799136)

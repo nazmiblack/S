@@ -1,7 +1,11 @@
-addappid(102840)
-addappid(102841,0,"587dc4fdaaf24f4ad2e33f9a1ba61025351157eede5dc3c0a9f0bed831a488e6")
-setManifestid(102841,"6337282187118349599")
-addappid(102842,0,"816fb7aa5ffc8dc6efd4acab2e7dbb021e82a3f204aa31acabe49b30595afe12")
-setManifestid(102842,"816208169619824010")
-addappid(102843,0,"216e6bdba1724e1df133dadb1d937883e1e75efd47efb41f45fb295667c00ed7")
-setManifestid(102843,"2930963994001926852")
+-- Create By BlackGaming
+-- Original file: 102840.lua
+--Gamename Shank 2
+addappid(102840) --Mainappid Shank 2
+addappid(102841, 1, "587dc4fdaaf24f4ad2e33f9a1ba61025351157eede5dc3c0a9f0bed831a488e6") --Main Windows Depot Shank 2
+setManifestid(102841, "6337282187118349599", 1464298400)
+addappid(102843, 1, "216e6bdba1724e1df133dadb1d937883e1e75efd47efb41f45fb295667c00ed7") --Main Linux Depot Shank 2
+setManifestid(102843, "2930963994001926852", 1696629584)
+--Dlcname Shank 2 - Deprecated Depot
+addappid(102842, 1, "816fb7aa5ffc8dc6efd4acab2e7dbb021e82a3f204aa31acabe49b30595afe12") --Dlcname Shank 2 - Deprecated Depot
+setManifestid(102842, "816208169619824010", 1695690160)

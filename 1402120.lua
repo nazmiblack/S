@@ -1,3 +1,6 @@
-addappid(1402120)
-addappid(1402121,0,"523c2a31a7404cd2f56d4396eee97a063c56d21792843befd04d02e962aef91e")
-setManifestid(1402121,"3763897844460228751")
+-- Create By BlackGaming
+-- Original file: 1402120.lua
+--Gamename 9 Years of Shadows
+addappid(1402120) --Mainappid 9 Years of Shadows
+addappid(1402121, 1, "523c2a31a7404cd2f56d4396eee97a063c56d21792843befd04d02e962aef91e") --Main Windows Depot 9 Years of Shadows
+setManifestid(1402121, "1708709466314969239", 1150099504)
