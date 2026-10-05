@@ -2,8 +2,9 @@ name: Send Discord Notification on Game Add
 
 on:
   push:
-    paths:
-      - '*.lua'
+    branches:
+      - main
+      - master
 
 jobs:
   notify:
@@ -20,7 +21,7 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          for file in ${{ steps.changed-files.outputs.added_files }}; do
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             if [[ "$file" == *.lua ]]; then
               appid=$(basename "$file" .lua)
               
