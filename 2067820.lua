@@ -1,4 +1,4 @@
--- Downloaded using DepotBox - https://depotbox.org/
+-- Create By BlackGaming
 -- Original file: 2067820.lua
 --Gamename RetroSpace
 addappid(2067820, 1, "3cc18699951e046ced42e0bf4edbc4cd3f57c6c50df385eaba59b2c45e021968") --Mainappid RetroSpace
