@@ -1,5 +1,5 @@
 {
-  version 1.0,
-  download_url httpsraw.githubusercontent.comnazmiblackSmainsteamx.exe,
-  release_notes Keluaran versi pertama StX Launcher.
+  "version": "1.0.1",
+  "download_url": "https://raw.githubusercontent.com/nazmiblack/S/main/StXLauncher.exe",
+  "changelog": "Fixed bugs and added auto-update feature."
 }
