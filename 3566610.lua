@@ -1,0 +1,5 @@
+-- Create By BlackGaming
+-- Original file: 3566610.lua
+--Gamename AppID 3566610
+addappid(3566610) --Mainappid AppID 3566610
+addappid(3566611, 1, "A1185A1E6700A1A8297B4F1B13B56024CB47E61F7E86D87203E6E32F040BC67E") --Main Windows Depot AppID 3566610

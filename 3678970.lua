@@ -1,4 +1,4 @@
--- Downloaded using DepotBox - https://depotbox.org/
+-- Create By BlackGaming
 -- Original file: 3678970.lua
 --Gamename TBH: Task Bar Hero
 addappid(3678970, 1, "3babc9b9da2b5ab2409cbd2037432aba399d9c12bedfa41269d1ee4a08d29954") --Mainappid TBH: Task Bar Hero
