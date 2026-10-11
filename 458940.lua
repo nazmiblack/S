@@ -1,0 +1,6 @@
+-- Create By BlackGaming
+-- Original file: 458940.lua
+--Gamename AppID 458940
+addappid(458940) --Mainappid AppID 458940
+addtoken(458940, "12551026596181485988")
+addappid(458941, 1, "d4a971dcae0e505ca89cd7fc310c85cc6abbb1377bb35abdef35267fa082af6c") --Main Windows Depot AppID 458940
