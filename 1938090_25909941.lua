@@ -1,4 +1,4 @@
--- Generated with Luie @ https://lua.tools/
+
 -- 1938090 - Call of Duty®
 -- Version-locked to Build 25909941 — released 2026-10-15 16:01:24 UTC
 -- Generated 2026-10-17 20:07:55 UTC
