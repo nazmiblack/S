@@ -3,7 +3,7 @@
 --Gamename Far Far West
 addappid(3124540, 1, "b9610a314958b1d24933e97333fb3aa962be0fff18935d44affb1a6619a0120b") --Mainappid Far Far West
 addappid(3124541, 1, "c09a55a6a88c0a10b672b6f544431641dafaf34a4f082c4798b3de9a59061cac") --Main Windows Depot Far Far West
-setManifestid(3124541, "7620601275528251120", 5020168528)
+setManifestid(3124541, "1161001734489623808", 5953016624)
 --Share Depots
 addappid(228989, 1, "ad69276eb476cf06c40312df7376d63deac0c838b9a2767005be8bb306ffb853") --Share Windows Depot Steamworks Common Redistributables
 setManifestid(228989, "5753583882400741046", 25108528)
