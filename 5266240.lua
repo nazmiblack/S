@@ -1,0 +1,6 @@
+-- Create By BlackGaming
+-- Original file: 5266240.lua
+--Gamename Potato Please
+addappid(5266240) --Mainappid Potato Please
+addappid(5266241, 1, "57800196ae065ae3d2dd10c93a2d606bb5cf0583c873ef511a86c6abc4acc2c8") --Main Windows Depot Potato Please
+setManifestid(5266241, "6565241294055418279", 1009408352)
