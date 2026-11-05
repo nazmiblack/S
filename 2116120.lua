@@ -3,7 +3,7 @@
 --Gamename Incursion Red River
 addappid(2116120, 1, "e8d8de54516b28bf4d096a77c70aa05add05a82eea917680858a79e1f3c04f53") --Mainappid Incursion Red River
 addappid(2116121, 1, "8f80a1590d1be6bfdde9c800499b420fe786838c27c69a6572bbb75c85c48007") --Main Windows Depot Incursion Red River
-setManifestid(2116121, "6672703203196539514", 30432157584)
+setManifestid(2116121, "5294374601343624825", 35546931296)
 --Dlcname Incursion Red River - Supporter Edition
 addappid(3405150, 1, "66466595306f5647e00fca5435234afc25e2a2f757c1ab2d550917767e80b71e") --Dlcname Incursion Red River - Supporter Edition
 setManifestid(3405150, "1887001357310105880", 12880516272)
