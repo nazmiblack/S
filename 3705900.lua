@@ -3,4 +3,4 @@
 --Gamename President Simulator
 addappid(3705900) --Mainappid President Simulator
 addappid(3705901, 1, "889bc295388ec78460c49dbaa754e8ffa42dc6799ea649966853ee2c2a1215eb") --Main Windows Depot President Simulator
-setManifestid(3705901, "872154371582967805", 1040348976)
+setManifestid(3705901, "298104523805188307", 1040708512)
