@@ -1,4 +1,3 @@
--- Generated with Luie @ https://lua.tools/
 -- 4493130 - Ski-E-O! Ski Resort Tycoon
 -- Generated 2026-11-14 17:30:25 UTC
 -- # Depots (Total/DLC/Shared): 4/0/2
