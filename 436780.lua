@@ -1,0 +1,18 @@
+-- 436780 - Tavern Keeper 🍻
+-- Generated 2026-11-15 07:04:03 UTC
+-- # Depots (Total/DLC/Shared): 3/2/0
+
+-- Main AppID
+addappid(436780, 1, "8528d503c1d2d88a485545580c74785e076db6d8f31a580aeb5556f21850c1b7")
+
+-- Main Depots
+addappid(436781, 1, "295c5ee4976de0706e14cc19122900bb2174ea53328d1c7e20c4a48a83503661")
+-- setManifestid(436781, "4950603532417047078", 9028566563)
+
+-- DLC's (with depot keys)
+-- Tavern Keeper 🍻 - Supporter Pack 💚 (AppID: 3902330)
+addappid(3902330)
+addappid(3902331, 1, "75aef37abcd4a1e36cb1f91f2917026e246b7604e335c52f6799afa496bb736d")
+-- setManifestid(3902331, "8279226437090369358", 334995087)
+addappid(3902332, 1, "605b4a07ce15b06fa69c78b59a93f8909d368ab8876614774fc044188b52b8db")
+-- setManifestid(3902332, "961212063483864129", 1402982836)
