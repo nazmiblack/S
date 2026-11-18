@@ -1,0 +1,19 @@
+-- 2141910 - Magic: The Gathering Arena
+-- Generated 2026-11-18 10:48:56 UTC
+-- # Depots (Total/DLC/Shared): 5/0/1
+
+-- Main AppID
+addappid(2141910, 1, "d73574699e13cfddd035b258b38df44d5945dcf312f739e02950220e9e0636ab")
+
+-- Main Depots
+addappid(2141911, 1, "a89ce6d3be7e0877eba8558a188bf09a2f37ed0c2de8b9e59224a427f760fba6") -- (windows, 64-bit)
+-- setManifestid(2141911, "4008431442066168669", 488211687)
+addappid(2141912, 1, "c588292e320d1a32305d1e5f2677bd3d187f561940fdc57f0a31d4f6939deebe") -- (windows, 64-bit)
+-- setManifestid(2141912, "6198474486025457108", 13146020026)
+addappid(2141913, 1, "4978A84F733D48703F18ED9550B418FAE805ABF888FC9A157A089BE21F9A54E9") -- (macos, 64-bit)
+-- setManifestid(2141913, "6596859438740930055", 789102181)
+addappid(2141914, 1, "D0B2D2BE66045C590D9BE7A0ABCF2F13B8EFD2FB42D92132254EE0912CF712F6") -- (macos, 64-bit)
+-- setManifestid(2141914, "1247939567925163393", 13131388877)
+
+-- Shared Depots (Runtimes / Launchers / ETC)
+addappid(228988, 1, "1845444d5e2cfd0ae65ae4a8fedb6e2fbf776fcc5b913ab4ac461bc9a74f8358") -- (windows)
