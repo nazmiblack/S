@@ -1,11 +1,20 @@
-addappid(1469610)
-addappid(228990)
-setManifestid(228990,"1829726630299308803")
-addappid(1469611,0,"cb95d3ea5c9f552b88c37bc94987bef1625b3ae64e2b06522256c01342877ac8")
-setManifestid(1469611,"2652712039643524793")
-addappid(2617720,0,"b7098a3e63d8c9af791a2e7490e6a549a15f7703d2a5149905769c2e49bc16d3")
-setManifestid(2617720,"6167571341731683914")
-addappid(2617710,0,"c3882e3af17a4230d127faccd8d869954c76c7521e0b980d650b6c477a8703b1")
-setManifestid(2617710,"7407527534042325527")
-addappid(2946200,0,"c4f3b00cb21b98545ffbf687c92a0cac6968687f71637da7746fd8eeed0e4256")
-setManifestid(2946200,"4336824362393481034")
+-- Create By BlackGaming
+-- Original file: 1469610.lua
+--Gamename Last Train Home
+addappid(1469610) --Mainappid Last Train Home
+addappid(1469611, 1, "cb95d3ea5c9f552b88c37bc94987bef1625b3ae64e2b06522256c01342877ac8") --Main Windows Depot Last Train Home
+setManifestid(1469611, "2652712039643524793", 21040167104)
+--Dlcname Last Train Home – Legion Tales
+addappid(2617710, 1, "c3882e3af17a4230d127faccd8d869954c76c7521e0b980d650b6c477a8703b1") --Dlcname Last Train Home – Legion Tales
+setManifestid(2617710, "7407527534042325527", 380228720)
+--Dlcname Last Train Home Artbook
+addappid(2617720, 1, "b7098a3e63d8c9af791a2e7490e6a549a15f7703d2a5149905769c2e49bc16d3") --Dlcname Last Train Home Artbook
+setManifestid(2617720, "6167571341731683914", 89661216)
+--Dlcname Last Train Home Wallpapers
+addappid(2946200, 1, "c4f3b00cb21b98545ffbf687c92a0cac6968687f71637da7746fd8eeed0e4256") --Dlcname Last Train Home Wallpapers
+setManifestid(2946200, "4336824362393481034", 160872096)
+--Share Depots
+addappid(228989, 1, "ad69276eb476cf06c40312df7376d63deac0c838b9a2767005be8bb306ffb853") --Share Windows Depot Steamworks Common Redistributables
+setManifestid(228989, "5753583882400741046", 25108528)
+addappid(228990, 1, "44d8c45ce229a11c4f231a3d2a350eaf80b0d69a8af938ec7ccca720f694b0e8") --Share Windows Depot Steamworks Common Redistributables
+setManifestid(228990, "1829726630299308803", 100658080)
