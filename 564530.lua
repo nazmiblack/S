@@ -1,3 +1,6 @@
-addappid(564530)
-addappid(564531,0,"28192ee60d83506858b4c3862c3576cb6655c48237429b3ba86c15a9e2fa329c")
--- setManifestid(564531,"5245282458055265918")
+-- Create By BlackGaming
+-- Original file: 564530.lua
+--Gamename Pharaoh + Cleopatra
+addappid(564530) --Mainappid Pharaoh + Cleopatra
+addappid(564531, 1, "28192ee60d83506858b4c3862c3576cb6655c48237429b3ba86c15a9e2fa329c") --Main Windows Depot Pharaoh + Cleopatra
+setManifestid(564531, "5245282458055265918", 498348320)
