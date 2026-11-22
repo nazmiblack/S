@@ -1,25 +1,26 @@
-
--- Main AppID
-addappid(4356430)
+-- Create By BlackGaming
+-- Original file: 4356430.lua
+--Gamename NBA 2K27
+addappid(4356430) --Mainappid NBA 2K27
 addtoken(4356430, "13716260120817756824")
-
--- Main Depots
-addappid(4356431, 1, "a1ccdda87579dfa269b9015cc7ba18b7eb8339848b5eb408bfea8bdfb31eb8a4")
--- setManifestid(4356431, "3967914069876064634", 80477306997)
-
--- DLC's (no depot keys required)
-addappid(4357560) -- NBA 2K27 Pro Pass: Season 1
-addappid(4357570) -- NBA 2K27 Hall of Fame Pass: Season 1
-addappid(4357580) -- NBA 2K27 MyCAREER Bonus Offer: Season 1
-addappid(4357590) -- NBA 2K27 MyTEAM Bonus Offer: Season 1
-
--- DLC's (with depot keys)
--- DLC 4687050 (AppID: 4687050)
-addappid(4687050)
-addappid(4687050, 1, "c96a0954f3836680afb31e3b837546bb92606ccaebcc3e1bf8cd3761b8221c25")
--- setManifestid(4687050, "4767089068737929486", 29646686473)
-
--- Shared Depots (Runtimes / Launchers / ETC)
-addappid(228988, 1, "1845444d5e2cfd0ae65ae4a8fedb6e2fbf776fcc5b913ab4ac461bc9a74f8358") -- (windows)
-
--- Missing Depots (We don't have the keys yet lol): 4841760, 4841761
+addappid(4356431, 1, "a1ccdda87579dfa269b9015cc7ba18b7eb8339848b5eb408bfea8bdfb31eb8a4") --Main Windows Depot NBA 2K27
+setManifestid(4356431, "5503080387321127732", 80674532800)
+--Dlcname NBA 2K27 - High Resolution Textures
+addtoken(4687050, "7614811867666966860")
+addappid(4687050, 1, "c96a0954f3836680afb31e3b837546bb92606ccaebcc3e1bf8cd3761b8221c25") --Dlcname NBA 2K27 - High Resolution Textures
+setManifestid(4687050, "555764085587409647", 30072015536)
+--Share Depots
+addappid(228988, 1, "1845444d5e2cfd0ae65ae4a8fedb6e2fbf776fcc5b913ab4ac461bc9a74f8358") --Share Windows Depot Steamworks Common Redistributables
+setManifestid(228988, "6645201662696499616", 22411856)
+addappid(4357560) --Dlcname NBA 2K27 Pro Pass: Season 1
+addappid(4357570) --Dlcname NBA 2K27 Hall of Fame Pass: Season 1
+addappid(4357580) --Dlcname NBA 2K27 MyCAREER Bonus Offer: Season 1
+addappid(4357590) --Dlcname NBA 2K27 MyTEAM Bonus Offer: Season 1
+addappid(4357600) --Dlcname NBA 2K27 - Pro Pass: Season 2
+addappid(4357610) --Dlcname NBA 2K27 - Hall of Fame Pass: Season 2
+addappid(4357620) --Dlcname NBA 2K27 - MyCareer Bundle: Season 2
+addappid(4357630) --Dlcname NBA 2K27 MyTEAM Bonus Offer: Season 2
+addappid(4691140) --Dlcname NBA 2K27 Bonus Pack
+addappid(4691150) --Dlcname NBA 2K27 Limited-Time Offer Bonus Pack
+addappid(4691180) --Dlcname NBA 2K27 Deluxe Bonus
+addappid(4691190) --Dlcname NBA 2K27 Ultra Bonus
